@@ -1,0 +1,59 @@
+.Header {
+  background-color: var(--brand-background);
+
+  & svg {
+    max-width: 30px;
+    max-height: 11px;
+  }
+
+  &__topMenu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: var(--brand-secondary);
+    padding: 1.2vw;
+    &Right {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    a > button {
+      // svg > path {
+      //   fill: rgb(241, 196, 15);
+      // }
+      color: var(--cta-heading);
+    }
+  }
+
+  &__midMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--brand-primary);
+    color: white;
+    border-top: 1px solid var(--cta-primary);
+    border-bottom: 2px solid var(--cta-primary);
+
+    &Text {
+      text-align: center;
+      margin-right: 1vw;
+      & span {
+        display: block;
+      }
+    }
+
+    & img {
+      max-width: 33vw;
+      padding: 1.75vw 2vw 1vw 2vw;
+    }
+  }
+
+  & button {
+    background-color: var(--cta-secondary);
+    color: var(--cta-body);
+    padding: 1vw;
+    margin: 0;
+    //margin-top:0.5vw;
+    font-size: 1.5vw;
+  }
+}

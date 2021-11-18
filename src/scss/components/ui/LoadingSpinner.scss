@@ -1,0 +1,33 @@
+.LoadingSpinner {
+  width: 100%;
+  text-align: center;
+}
+
+.LoadingSpinner__inner {
+  display: inline-block;
+  width: 6vw;
+  height: 6vw;
+  margin: 1vw;
+}
+
+.LoadingSpinner__inner:after {
+  content: " ";
+  display: block;
+  width: 4vw;
+  height: 4vw;
+  margin: 1vw;
+  border-radius: 50%;
+  border: 1vw solid var(--loading-spinner-color);
+  border-color: var(--loading-spinner-color) transparent
+    var(--loading-spinner-color) transparent;
+  animation: dual-ring 1.2s linear infinite;
+}
+
+@keyframes dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

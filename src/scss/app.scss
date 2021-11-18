@@ -1,0 +1,50 @@
+.App{
+  max-width: 1280px;
+  background-color:var(--brand-background-alt);
+  margin: auto;
+  min-height: 100vh;
+}
+
+.Module {
+  &__primary {
+     border-top: 6px solid var(--cta-primary);
+     background: var(--brand-background);
+     padding: 4vw 6vw;
+     border-radius: 4px;
+     box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    
+     h4 {
+      margin-bottom: 1vw;
+    }
+  }
+
+}
+
+.row {
+  &__two-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+}
+
+.mb {
+  margin-bottom: 15px;
+  &__sm {
+    margin-bottom: 10px;
+  }
+}
+
+.mt {
+  margin-top: 15px;
+  &__sm {
+    margin-bottom: 10px;
+  }
+}
+
+.subtle-wrap {
+  background: rgba(0,0,0,0.04);
+  border-radius: 4px;
+  padding: 14px 24px;
+}

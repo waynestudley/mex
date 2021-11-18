@@ -1,0 +1,39 @@
+.PackageSummary {
+  padding: 1vw;
+  & img {
+    padding: 0.5vw 5vw;
+  }
+  & h3 {
+    margin: 0;
+  }
+  &__divider {
+    width: 100%;
+    height: 1px;
+    border-top: 1px dashed var(--cta-primary);
+  }
+  &__tr {
+    padding: 0.5vw 1vw;
+    display: flex;
+    align-items: center;
+  }
+  &__td {
+    display: inline-block;
+    width: 50%;
+  }
+  &__table {
+    // border: 1px solid black;
+    background-color: var(--brand-background);
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    border-radius: 4px;
+  }
+  &__tableHeading {
+    background-color: var(--brand-secondary);
+    color: white;
+    padding: 0.5vw 1vw;
+    border-radius: 4px 4px 0px 0px;
+    
+  }
+  &__tableBody {
+    padding: 0.5vw 1vw;
+  }
+}

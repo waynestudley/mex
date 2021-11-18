@@ -1,0 +1,10 @@
+.CreditCardAddress {
+  padding: 1vw 10vw;
+  text-align: center;
+  margin-bottom:5vw;
+  
+  & select, button, input{
+    margin-left:auto;
+    margin-right:auto;
+  }  
+}

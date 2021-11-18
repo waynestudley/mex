@@ -1,0 +1,26 @@
+.CreditCardHeader {
+  padding: 1vw;
+  background-color: var(--brand-background);
+  min-height: 72px;
+
+  &__imgMask{
+    overflow:hidden;
+  }
+
+  & img {
+    max-height: 64px;
+    padding-top: 10px;
+  }
+
+  & .logoLeft {
+    position: absolute;
+    left: 18px;
+    max-width: 40%;
+  }
+  
+  & .logoRight {
+    position: absolute;
+    right: 18px;
+    max-width: 40%;
+  }
+}

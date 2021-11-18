@@ -1,0 +1,37 @@
+.CreditCardType {
+  padding: 1vw 10vw;
+  margin-bottom:5vw;
+
+  text-align: center;
+  & select,
+  button,
+  input {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  & .Panel {
+    /*margin: 0 -540px 0 -540px;*/
+    padding: 1vw;
+    background-color: var(--brand-primary);
+    min-height: 20%;
+    color: #fff;
+    font-family: VAG-light;
+    /*padding-left: 3rem;*/
+    clear: left;
+  }
+
+  li {
+    line-height: 30px;
+    font-size: 18px;
+  }
+
+  li:before {
+    content: "✓";
+    color:var(--brand-secondary);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}

@@ -1,0 +1,318 @@
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans"),
+    url(../fonts/opensans-regular-webfont.woff) format("woff");
+}
+
+@font-face {
+  font-family: "VAG-light";
+  src: local("VAG-light"),
+    url(../fonts/VAG-Rundschrift-W01-Light.woff) format("woff");
+}
+
+@font-face {
+  font-family: "VAG";
+  src: local("VAG"), url(../fonts/VAG-Rundschrift.woff) format("woff");
+}
+
+:root {
+  --brand-primary: rgb(32, 58, 84);
+  --brand-secondary: rgb(49, 88, 127);
+  --brand-tertiary: #b3e4ff;
+  --brand-background: white;
+  --brand-background-alt: #f4faff;
+  --brand-heading: #0c3a5b;
+  --brand-body: rgb(32, 58, 84);
+  --cta-primary: #f1c40f;
+  --cta-secondary: #f1c40f;
+  --cta-body: white;
+  --font--primary: #333333;
+  --loading-spinner-color: grey;
+  --dark-grey: dimgray;
+  --brand-success: #8cc73f;
+  // --cta-primary: #b81262; // duplicated
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "OpenSans";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline-color: var(--cta-primary);
+  color: var(--font--primary);
+}
+
+.Global {
+  &__heading {
+    padding: 20px 0px;
+  }
+}
+
+.AddressWrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-height: 200px;
+  overflow: auto;
+  margin-left: 0;
+  border: 1px solid var(--dark-grey);
+  border-top: none;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
+}
+
+.AddressWrapper:empty {
+  display: none;
+}
+
+.AddressWrapper div {
+  & p {
+    border: none;
+    text-align: left;
+    padding: 12px 14px;
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    border-top: 1px dashed #666;
+    cursor: pointer;
+  }
+  &:nth-child(odd) {
+    & p {
+      // background-color: rgba(184,18,98,.55);
+      background-color: var(--cta-primary);
+      opacity: 0.7;
+    }
+  }
+
+  &:nth-child(2n) {
+    // background-color: #b81262;
+    & p {
+      background-color: var(--cta-primary);
+    }
+  }
+}
+
+a[href] {
+  text-decoration: none;
+}
+
+.Form {
+  &--error {
+    color: red;
+    transform: scale(0.8);
+  }
+}
+form {
+  & button {
+    margin-top: 1vw;
+  }
+}
+
+.bodysmall {
+  font-size: 1vw;
+}
+body {
+  font-size: 2vw;
+}
+h1 {
+  font-size: 4vw;
+}
+h2 {
+  font-size: 3.5vw;
+}
+h3 {
+  font-size: 2.5vw;
+}
+h4 {
+  font-size: 2vw;
+}
+
+button {
+  margin-bottom: 1vh;
+}
+
+button,
+select,
+option,
+input[type="text"],
+input[type="password"],
+label {
+  font-size: 3.75vw;
+  display: block;
+  outline-color: var(--cta-primary);
+}
+
+input[type="text"],
+input[type="password"],
+select,
+option {
+  padding: 10px;
+}
+
+.showOnMobile {
+  display: block;
+}
+
+.showOnDesktop {
+  display: none;
+}
+
+@media screen and (min-width: 1025px) {
+  .showOnMobile {
+    display: none;
+  }
+  .showOnDesktop {
+    display: block;
+  }
+}
+
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .bodysmall {
+    font-size: 1.5vw;
+  }
+  body {
+    font-size: 2vw;
+  }
+  h1 {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 3.5vw;
+  }
+  h3 {
+    font-size: 2.5vw;
+  }
+  h4 {
+    font-size: 2vw;
+  }
+  button,
+  select,
+  option,
+  input[type="text"],
+  input[type="password"],
+  label {
+    font-size: 3.75vw;
+  }
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .bodysmall {
+    font-size: 1.5vw;
+  }
+  body {
+    font-size: 2vw;
+  }
+  h1 {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 3.5vw;
+  }
+  h3 {
+    font-size: 2.5vw;
+  }
+  h4 {
+    font-size: 2vw;
+  }
+  button,
+  select,
+  option,
+  input[type="text"],
+  input[type="password"],
+  label {
+    font-size: 3.75vw;
+  }
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .bodysmall {
+    font-size: 1.5vw;
+  }
+  body {
+    font-size: 2vw;
+  }
+  h1 {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 3.5vw;
+  }
+  h3 {
+    font-size: 2.5vw;
+  }
+  h4 {
+    font-size: 2vw;
+  }
+  button,
+  select,
+  option,
+  input[type="text"],
+  input[type="password"],
+  label {
+    font-size: 2.75vw;
+  }
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .bodysmall {
+    font-size: 1.275vw;
+  }
+  body {
+    font-size: 1.7vw;
+  }
+  h1 {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 3.5vw;
+  }
+  h3 {
+    font-size: 2.5vw;
+  }
+  h4 {
+    font-size: 2vw;
+  }
+  button,
+  select,
+  option,
+  input[type="text"],
+  input[type="password"],
+  label {
+    font-size: 2.75vw;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .bodysmall {
+    font-size: 14px;
+  }
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  button,
+  select,
+  option,
+  input[type="text"],
+  input[type="password"],
+  label {
+    font-size: 28px;
+  }
+}

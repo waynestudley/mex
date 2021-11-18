@@ -1,0 +1,54 @@
+.DeviceChecker {
+  & h3 {
+    margin: 0;
+    margin-bottom: 1vw;
+  }
+
+  & h4 {
+    margin: 0;
+    margin-bottom: 1vw;
+  }
+
+  & svg {
+    width: 50%;
+    max-height: 50px;
+  }
+
+  & label {
+    border: 3px solid var(--brand-primary);
+    background-color: var(--brand-tertiary);
+    border-radius: 5px;
+    width: 30%;
+    min-height: 13vh;
+    overflow: hidden;
+    font-size: 1em;
+    text-align: center !important;
+    margin-bottom: 2.35vw;
+    padding: 1.5vw;
+    & h4{
+      margin-bottom:0;
+    }
+  }
+
+  & select {
+    width: auto !important;
+    background-color: rgba(0, 0, 0, 0)!important;
+    border: transparent!important;
+    padding: 10px!important;
+    box-shadow: unset!important;
+    outline: none!important;
+
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    //padding: 12px;
+  }
+
+  &__item {
+    display: flex;
+    margin-top: 10px;
+    padding: 0px 10px;
+  }
+}

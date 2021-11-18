@@ -1,0 +1,12 @@
+.CreditCardFooter {  
+  &__left{
+    position: fixed;
+    left: 1vh;
+    bottom: 0px;
+  }
+  &__right{
+    position: fixed;
+    right: 1vh;
+    bottom: 0px;
+  }
+}

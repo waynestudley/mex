@@ -1,0 +1,9 @@
+.Module {
+    background: var(--brand-background);
+    padding: 32px;
+
+    &__primary {
+       border-top: 10px solid var(--cta-primary);
+    }
+
+}

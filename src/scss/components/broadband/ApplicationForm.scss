@@ -1,0 +1,39 @@
+.ApplicationForm {
+
+  &__DDHeading{
+    display:flex;
+    justify-content:space-between;
+    //text-align: center;
+    padding: 3vw;
+    background: whitesmoke;
+    align-items: center;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+    border-radius: 4px;
+    flex-direction: row-reverse;
+    p {
+      margin-right: 2vw;
+    }
+  }
+
+  &__secureMessages{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    
+    & img{
+      max-width: 5vw;
+      margin:1vw;
+    }
+  }
+
+  input, select {
+    margin-bottom: 3vw!important;
+  }
+
+  label {
+    margin-bottom: 0.8vw!important;
+    font-size: 16px!important;
+    font-weight: bold;
+  }
+}

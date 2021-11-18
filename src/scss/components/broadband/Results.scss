@@ -1,0 +1,205 @@
+.Results {
+  & h3,
+  h4 {
+    margin: 0;
+  }
+
+  & button {
+    display: inline-block;
+  }
+
+  &__filterModule {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__filter {
+    &Wrapper {
+      &__withTV {
+        &::not(:first-child) {
+          color: red !important; //Fix this
+        }
+        & button {
+          background-color: var(--brand-background) !important;
+          border: solid 1px #dddddd !important;
+          color: #333333 !important;
+          outline: none;
+
+          &:nth-child(2) {
+            border-radius: 4px 0px 0px 4px;
+          }
+          &:nth-child(3) {
+            border-radius: 0px 4px 4px 0px;
+          }
+        }
+
+        &__providers {
+          button {
+            background-color: var(--brand-background) !important;
+            border: solid 1px #dddddd !important;
+            color: #333333 !important;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+
+  .Results__filterButton {
+    background-color: var(--brand-background) !important;
+    border: solid 1px #dddddd !important;
+    color: #333333 !important;
+    outline: none;
+  }
+
+  .Results__filterButton--active {
+    background-color: #d5ebc5 !important;
+    &.high::after {
+      display: inline-block;
+      margin-left: 0.5em;
+      vertical-align: 0.255em;
+      content: "";
+      border-top: 0.3em solid;
+      border-right: 0.3em solid transparent;
+      border-bottom: 0;
+      border-left: 0.3em solid transparent;
+    }
+    &.low::after {
+      display: inline-block;
+      margin-left: 0.5em;
+      vertical-align: 0.255em;
+      content: "";
+      border-bottom: 0.3em solid;
+      border-right: 0.3em solid transparent;
+      border-top: 0;
+      border-left: 0.3em solid transparent;
+    }
+  }
+
+  &__additional {
+    border-top: 1px dashed var(--cta-primary);
+    margin-top: 1vw;
+
+    & a {
+      color: var(--cta-primary);
+    }
+    &Header {
+      border: 1px solid var(--brand-secondary);
+      background-color: var(--brand-secondary);
+      color: white;
+      font-weight: bold;
+      padding: 0.5vw 1vw;
+    }
+    &Body {
+      border: 1px solid var(--brand-secondary);
+    }
+    &MediaFeature {
+      border-bottom: 1px dashed var(--cta-primary);
+      margin: 1vw;
+    }
+  }
+
+  &__item {
+    border-radius: 4px;
+    margin-bottom: 1vw;
+    background-color: var(--brand-background);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-left: solid 6px #31587f;
+
+    padding: 1vw;
+    & img {
+      padding: 1vw 2.5vw;
+    }
+    &Column {
+      max-width: 25%;
+      button {
+        margin-top: 1vw;
+      }
+    }
+    &Container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5vw 1vw;
+    }
+  }
+
+  &__feature {
+    border: 1px solid var(--brand-secondary);
+    width: calc(50% - 2vw);
+    display: inline-block;
+    margin: 1vw;
+  }
+
+  &__heroContainer {
+    display: flex;
+    & button {
+      min-height: 9vw;
+    }
+  }
+
+  &__heroItem {
+    width: 50%;
+    margin: 1vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--brand-background);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding-bottom: 2.5vw;
+
+    & img {
+      padding: 1vw 7.5vw;
+    }
+
+    &Title {
+      background-color: var(--brand-secondary);
+      color: white;
+      font-weight: bold;
+      padding: 1vw;
+      min-height: 6vw;
+      border-radius: 4px 4px 0px 0px;
+    }
+
+    &Body {
+      padding: 1vw;
+
+      & p {
+        margin: 0;
+      }
+    }
+
+    & button {
+      margin: 1vw 5vw;
+      font-size: 1.5vw;
+      padding: 2vw 3vw !important;
+      min-height: unset;
+    }
+  }
+
+  .providerImage {
+    background: white;
+    border-radius: 4px;
+    padding: 12px 18px;
+    border: solid 1px #dddddd;
+    margin-right: 12px;
+    &:last-child {
+      margin-right: unset;
+    }
+    img {
+      max-height: 5vw;
+      width: auto;
+      height: 5vw;
+    }
+    &.providerImage--selected {
+      border: solid 2px green;
+    }
+  }
+
+  .button-group {
+    height: 0%;
+    display: flex;
+  }
+}

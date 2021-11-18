@@ -1,0 +1,23 @@
+.CreditCardResults {
+  padding: 1vw 10vw;
+  margin-bottom:5vw;
+  
+  & h3{
+    text-align: center;
+  }
+
+  & select, button, input{
+    margin-left:auto;
+    margin-right:auto;
+  }  
+
+  & label{
+    display:inline-block;
+    margin-right:20px;
+  }
+
+  & input{
+    display:inline-block;
+    margin-right:10px;
+  }
+}
